@@ -37,3 +37,4 @@ public class MeshDeformer : MonoBehaviour
         deformedMesh.RecalculateNormals();
     }
 }
+

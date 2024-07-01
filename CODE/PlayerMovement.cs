@@ -25,8 +25,9 @@ public class PlayerMovement : MonoBehaviour
         // Calculate movement direction based on the player's forward direction
         float currentSpeed = speed;
 
-        // Check if the sprint key (left shift) is held down0-
-        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button1)); 
+        // Check if the sprint key (left shift) is held down
+        bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.Joystick1Button1);
+        if (isSprinting)
         {
             currentSpeed *= sprintMultiplier;
         }
